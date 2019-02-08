@@ -6,7 +6,7 @@ COPY ./solr/lib /opt/solr/lib
 USER root
 
 RUN apt-get update
-RUN apt-get install vim nano
+RUN apt-get --assume-yes install vim nano
 
 USER solr
 
