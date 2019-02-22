@@ -12,4 +12,4 @@ RUN apt-get --assume-yes install vim nano
 USER solr
 
 CMD ["solr-precreate", "discovery", "/myconfig"]
-CMD bin/solr -e dih -p 8984
+RUN bin/solr -e dih -p 8984
